@@ -10,9 +10,11 @@ public class Switch {
 		case 1:
 			System.out.println("11111");
 
+			break;
 		case 2:
 			System.out.println("2222");
 
+			//$FALL-THROUGH$
 		case 3:
 			System.out.println("3333");
 
