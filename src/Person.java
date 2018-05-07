@@ -4,37 +4,16 @@ public class Person {
 	private String name;
 	private int age;
 
-	
-//	构造方法
-	
-	public Person(String name,int age) {
-		
-		this.name =name;
-		this.age=age;
-			
+	public Person(String name) {
+		this.name = name;
 	}
-	
-	
-	public Person() {
-		
-		this("Unamed",20);
-		 
-		
-		
-	}
-	
 
-	
 	public String getName() {
-
 		return name;
-
 	}
 
 	public void setName(String name) {
-
-		this.name = name.trim();
-
+		this.name = name;
 	}
 
 	public int getAge() {
@@ -49,17 +28,25 @@ public class Person {
 
 	}
 
-	private   int calcBirth(int currentYear) {
+	public String hello() {
 		
-		return currentYear - this.age;
-		
-	}
-	
-	public int getBirth() {
-		
-		return calcBirth(2016);
+		return "hello, "+this.name;
 		
 	}
 	
+	
+	
+	
+	public void run() {
+
+		System.out.println(name + "is aaa!");
+
+	}
+
+	public String toString() {
+
+		return "preson " + this.name;
+
+	}
 
 }
