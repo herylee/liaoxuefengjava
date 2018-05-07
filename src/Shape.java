@@ -1,6 +1,12 @@
 
 public interface Shape {
 
-	 double area();
+	double area();
+
+	default double perimeter() {
+	 return 0;
+	 
+	}
+
 
 }

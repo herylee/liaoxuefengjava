@@ -4,8 +4,13 @@ public class Person {
 	private String name;
 	private int age;
 
+	
+	private	static int number;
+	
+	
 	public Person(String name) {
 		this.name = name;
+		number++;
 	}
 
 	public String getName() {
@@ -49,4 +54,12 @@ public class Person {
 
 	}
 
+	
+	public static int getNumber() {
+		
+		return number;
+	}
+	
+	
+	
 }
